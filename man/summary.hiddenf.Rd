@@ -23,7 +23,7 @@ and Data Analysis, 67:95-104.
 
 }
 \author{
-Jason A. Osborne
+Jason A. Osborne and Christopher T. Franck
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~

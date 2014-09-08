@@ -37,7 +37,7 @@ Additivity in two-factor Unreplicated Experiments, Computational Statistics
 and Data Analysis, 67:95-104.
 }
 \author{
-Jason A. Osborne \email{jaosborn@ncsu.edu}
+Jason A. Osborne \email{jaosborn@ncsu.edu} and Christopher T. Franck
 }
 \seealso{anova.hiddenf,summary.hiddenf,print.hiddenf}
 \examples{

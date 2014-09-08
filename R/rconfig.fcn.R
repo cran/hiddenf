@@ -21,7 +21,6 @@ counter <- counter+1
 }
 }
 g <- g+1
-print(g)
 ulim <- choose(b,g)/2
 for(j in 1:ulim)
 {
