@@ -7,10 +7,11 @@
 }
 \usage{data(Boik.mtx)}
 \source{
-  Boik, RJ. (1993) A comparison of three invariant tests of additivity in two-way classifications with no replications, Computational Statistics & Data Analysis, 15:411-424.
+Boik, RJ. (1993) A comparison of three invariant tests of additivity in two-way classifications with no replications, Computational Statistics & Data Analysis, 15:411-424.
 }
 \examples{
 data(Boik.mtx)
-Boik.mtx
+Boik.out <- hiddenf(Boik.mtx)
+anova(Boik.out)
 }
 \keyword{datasets}

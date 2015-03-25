@@ -11,8 +11,8 @@ Experiment included thousands of probes, one of which is included here.
 Measured for two types of tissue (columns) on each of six dogs (rows) with lymphoma.
 }}
 \examples{
-\dontrun{
 data(cnv1.mtx)
-print(cnv1.mtx)
-}}
+cnv1.out <- hiddenf(cnv1.mtx)
+summary(cnv1.out)
+}
 \keyword{datasets}

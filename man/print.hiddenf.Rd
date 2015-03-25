@@ -1,7 +1,6 @@
 \name{print.hiddenf}
 \alias{print.hiddenf}
 \alias{print}
-%- Also NEED an '\alias' for EACH other topic documented here.
 \title{Printing hiddenf objects}
 \description{`print' method for class `hiddenf'
 }
@@ -12,11 +11,11 @@
   \item{x}{
 An object of class `hiddenf'
 }
-  \item{\dots}{further arguments passed from other methods}
+  \item{\dots}{further arguments}
 }
 \value{
 \item{Fratio}{The F-statistic for group-by-treatment interaction}
-item{adjpvalue}{The corresponding Bonferroni-adjusted p-value}
+\item{adjpvalue}{The corresponding Bonferroni-adjusted p-value}
 %% ...
 }
 \references{
@@ -25,19 +24,17 @@ Additivity in two-factor Unreplicated Experiments, Computational Statistics
 and Data Analysis, 67:95-104.
 }
 \author{
-Jason A. Osborne and Christopher T. Franck
+Jason A. Osborne, Christopher T. Franck and Bongseog Choi
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
-The function which searches for the maximal F-ratio, \code{hiddenf}
+hiddenf
 }
 \examples{
 data(cnv1.mtx)
 cnv1.out <- hiddenf(cnv1.mtx)
 print(cnv1.out)
 }
-\keyword{ ~interaction }
-\keyword{ ~nonadditivity }
+\keyword{non-additivity}

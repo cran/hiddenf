@@ -2,8 +2,7 @@
 \alias{cnvall.mtx}
 \docType{data}
 \title{Copy Number Variation}
-\description{Data, courtesy of Dr. Matthew Breen, N.C. State University, from 
-an experiment to study copy number variation in dogs.  Experiment included 
+\description{Data  from an experiment (courtesy of Dr. Matthew Breen, N.C. State University) to study copy number variation in dogs.  Experiment included 
 thousands of probes, several of which are included here,
 and indexed by the variable called `dataset'.
 }
@@ -14,12 +13,11 @@ Measured for two types of tissue (columns) on each of six dogs (rows) with lymph
 is not formatted for functions in 'hiddenf' that require matrix input.
 }}
 \examples{
-\dontrun{
 data(cnvall.mtx)
 cnvall.mtx
-cnv3.mtx <- matrix(cnvall.mtx[25:36,3],byrow=T,nrow=12,ncol=2)
-cnv3.out <- hiddenf.mtxfcn(cnv3.mtx)
+cnv3.mtx <- matrix(cnvall.mtx[25:36,3],byrow=TRUE,nrow=12,ncol=2)
+cnv3.out <- hiddenf(cnv3.mtx)
 print(cnv3.out$pvalue)
 anova(cnv3.out)
-}}
+}
 \keyword{datasets}

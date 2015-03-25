@@ -1,1 +1,5 @@
-exportPattern(hiddenf,anova,summary,print,plot)
+exportPattern(hiddenf,additivityPvalues,MandelPvalue,TukeyPvalue,KKSAPvalue,MalikPvalue,MalikTab,Malikfunction)
+S3method(print,hiddenf)
+S3method(plot,hiddenf)
+S3method(summary,hiddenf)
+S3method(anova,hiddenf)

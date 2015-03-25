@@ -1,7 +1,7 @@
 \name{anova.hiddenf}
 \alias{anova.hiddenf}
 \alias{anova}
-\title{Anova function for the class "hiddenf"
+\title{Anova function for the class `hiddenf'
 }
 \description{
 Reproduces the analysis of variance table corresponding
@@ -17,7 +17,7 @@ group and the treatment/other factor is maximized
   \item{\dots}{other arguments}
 }
 \value{
-\item{anova.out}{An object of class "anova"} 
+\item{anova.out}{An object of class `anova'} 
 }
 \references{
 Franck CT, Nielsen, DM and Osborne, JA. (2013) A Method for Detecting Hidden
@@ -25,11 +25,8 @@ Additivity in two-factor Unreplicated Experiments, Computational Statistics
 and Data Analysis, 67:95-104.
 }
 \author{
-Jason A. Osborne and Christopher T. Franck
+Jason A. Osborne, Bongseog Choi and Christopher T. Franck
 }
-
-%% ~Make other sections like Warning with \section{Warning }{....} ~
-
 \seealso{
 \code{\link{anova}}, \code{\link{lm}}
 }
@@ -38,6 +35,6 @@ data(cjejuni.mtx)
 cjejuni.out <- hiddenf(cjejuni.mtx)
 anova(cjejuni.out)
 }
-\keyword{ ~anova }
-\keyword{ ~interaction }
-\keyword{ ~hidden additivity }
+\keyword{anova}
+\keyword{non-additivity}
+\keyword{hidden additivity}

@@ -3,7 +3,7 @@ function(block)
 {
 bvalues <- as.vector(names(table(block)))
 b <- length(table(block))
-if(b > 15){stop("package not yet ready for b>15")}
+if(b > 20){stop("package not yet ready for b>20")}
 cc <- 2^(b-1)-1
 rconfig.mtx <- matrix(NA,nrow=length(block),ncol=cc)
 counter <- 1
