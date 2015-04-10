@@ -1,4 +1,5 @@
-MalikPvalue <- function(hfobj,N=1000){
+MalikPvalue <-
+function(hfobj,N=500){
   tallset<-hfobj$tall
   
   y<-tallset$y

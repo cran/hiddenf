@@ -1,4 +1,5 @@
-Malikfunction<-function(hfobj,N=1000){
+Malikfunction <-
+function(hfobj,N=1000){
   
   y<-hfobj$tall$y
   block<-hfobj$tall$block

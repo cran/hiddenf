@@ -6,11 +6,11 @@
 non-additivity developed in Malik, et al. (2015).
 }
 \usage{
-MalikPvalue(hfobj, N=1000)
+MalikPvalue(hfobj, N=500)
 }
 \arguments{
   \item{hfobj}{An object of class \code{hiddenf} created by the \code{hiddenf} function}
-  \item{N}{The number of Monte Carlo datasets used to determine critical thresholds for Malik's test statistic.  Default value is N=1000.
+  \item{N}{The number of Monte Carlo datasets used to determine critical thresholds for Malik's test statistic.  Default value is N=500
 }
 }
 \value{A Monte Carlo estimate of the p-value from the Malik et al (2015) test of non-additivity.  The standard error of this estimate is inversely proportional to the square root of N.}
@@ -22,9 +22,10 @@ Malik, WA, Mohring, J and Piepho, H. (2014) A clustering-based test for non-addi
 \seealso{hiddenf, additivityPvalues
 }
 \examples{
+\dontrun{
 library(hiddenf)
 data(cjejuni.mtx)
 cjejuni.out <- hiddenf(cjejuni.mtx)
 cjejuni.MalikPvalue <- MalikPvalue(cjejuni.out)
-}
+}}
 \keyword{non-additivity }

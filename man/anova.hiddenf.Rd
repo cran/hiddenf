@@ -10,10 +10,11 @@ factor into two groups such that interaction between
 group and the treatment/other factor is maximized
 }
 \usage{
-\method{anova}{hiddenf}(object, \dots)
+\method{anova}{hiddenf}(object, warncat=TRUE, \dots)
 }
 \arguments{
   \item{object}{An object of class "hiddenf"}
+  \item{warncat}{A boolean argument that can be used to suppress warning about multiplicity adjustment to reported pvalue}
   \item{\dots}{other arguments}
 }
 \value{
