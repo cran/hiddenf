@@ -7,13 +7,11 @@ This function computes Monte Carlo estimates of critical values
 for Malik's test for non-additivity at significance levels .01,.05 and .1
 }
 \usage{
-MalikTab(t, b, N)
+MalikTab(r, c, N=1000)
 }
 \arguments{
-  \item{t}{Number of levels of column factor
-}
-  \item{b}{Number of levels of row factor
-}
+  \item{r}{Number of levels of row factor}
+  \item{c}{Number of levels of column factor}
   \item{N}{Number of additive datasets to be generated for Monte Carlo
 estimation of critical values
 }
@@ -41,7 +39,7 @@ Statistics-Simulation and Computation, just-accepted
 # respectively
 \dontrun{
 data(cjejuni.mtx)
-cjejuni.out <- hiddenf(cjejuni.mtx)
+cjejuni.out <- HiddenF(cjejuni.mtx)
 Malik.pvalue <- MalikPvalue(cjejuni.out)
 cjejuni.Malikobj <- Maliktab(4,5,N=1000)
 print(cjejuni.Malikobj$q)

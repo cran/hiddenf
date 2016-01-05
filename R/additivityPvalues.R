@@ -14,7 +14,7 @@ function(ymtx.out)
 #        Mandel requires more than two levels #
 #        for each factor                      #
 ###############################################
-#ymtx.out <- hiddenf(ymtx)
+#ymtx.out <- HiddenF(ymtx)
 Mandel.pvalue <- round(MandelPvalue(ymtx.out)$pvalue,digits=4)
 Tukey.pvalue <- round(TukeyPvalue(ymtx.out)$pvalue,digits=4)
 KKSA.pvalue <- round(KKSAPvalue(ymtx.out)$pvalue,digits=4)
@@ -24,5 +24,6 @@ Malik.pvalue = Malik.pvalue,
 Mandel.pvalue =Mandel.pvalue,
 Tukey.pvalue =Tukey.pvalue ,
 KKSA.pvalue = KKSA.pvalue, 
-hf.pvalue = round(ymtx.out$adjpvalue,digits=4))
+# hf.pvalue = round(ymtx.out$adjpvalue,digits=4))
+ACMIF.pvalue = round(ymtx.out$adjpvalue,digits=4))
 }

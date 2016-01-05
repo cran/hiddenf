@@ -13,11 +13,11 @@ KKSAPvalue(hfobj)
 }
 \arguments{
   \item{hfobj}{
-An object of class \code{hiddenf} created by the \code{hiddenf} function
+An object of class \code{HiddenF} created by the \code{HiddenF} function
 }
 }
 \details{
-Requires that data matrix has more than four rows (b > 4)
+Requires that data matrix has more than four rows (r > 4)
 }
 \value{
 A list containing the input data matrix converted to list form,
@@ -35,12 +35,12 @@ and Methods, 36:2787-2803.
 Jason A. Osborne, Christopher T. Franck and  Bongseog Choi
 }
 \seealso{
-hiddenf, additivityPvalues
+HiddenF, additivityPvalues
 }
 \examples{
 library(hiddenf)
 data(cjejuni.mtx)
-cjejuni.out <- hiddenf(cjejuni.mtx)
+cjejuni.out <- HiddenF(cjejuni.mtx)
 KKSA.out <- KKSAPvalue(cjejuni.out)
 print(KKSA.out$pvalue)
 }

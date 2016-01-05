@@ -8,7 +8,7 @@
 MandelPvalue(hfobj)
 }
 \arguments{
-  \item{hfobj}{An object of class \code{hiddenf} created by the \code{hiddenf} function
+  \item{hfobj}{An object of class \code{HiddenF} created by the \code{HiddenF} function
 }
 }
 \value{
@@ -20,13 +20,13 @@ Mandel J. (1961) Non-Additivity in Two-Way Analysis of Variance, Journal of the 
 \author{
 Jason A. Osborne and Christopher T.  Franck and  Bongseog Choi
 }
-\seealso{hiddenf, additivityPvalues
+\seealso{HiddenF, additivityPvalues
 }
 \examples{
 \dontrun{
 library(hiddenf)
 data(cjejuni.mtx)
-cjejuni.out <- hiddenf(cjejuni.mtx)
+cjejuni.out <- HiddenF(cjejuni.mtx)
 kksa.pvalue <- KKSAPvalue(cjejuni.out)
 }}
 \keyword{non-additivity }

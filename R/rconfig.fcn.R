@@ -1,44 +1,44 @@
 rconfig.fcn <-
-function(block)
+function(rows)
 {
-bvalues <- as.vector(names(table(block)))
-b <- length(table(block))
-if(b > 20){stop("package not yet ready for b>20")}
-cc <- 2^(b-1)-1
-rconfig.mtx <- matrix(NA,nrow=length(block),ncol=cc)
+avalues <- as.vector(names(table(rows)))
+a <- length(table(rows))
+if(a > 20){stop("package not yet ready for a>20")}
+cc <- 2^(a-1)-1
+rconfig.mtx <- matrix(NA,nrow=length(rows),ncol=cc)
 counter <- 1
 #if(is.even(b))
-if((b %% 2)==0)
+if((a %% 2)==0)
 {
-for(g in 1:((b/2)-1))
+for(g in 1:((a/2)-1))
 {
-ulim <- choose(b,g)
+ulim <- choose(a,g)
 for(j in 1:ulim)
 {
-combo <- combn(b,g)
-rconfig.mtx[,counter] <- 1*is.element(block,combo[,j])
+combo <- combn(a,g)
+rconfig.mtx[,counter] <- 1*is.element(rows,combo[,j])
 counter <- counter+1
 }
 }
 g <- g+1
-ulim <- choose(b,g)/2
+ulim <- choose(a,g)/2
 for(j in 1:ulim)
 {
-combo <- combn(b,g)[,1:ulim]
-rconfig.mtx[,counter] <- 1*is.element(block,combo[,j])
+combo <- combn(a,g)[,1:ulim]
+rconfig.mtx[,counter] <- 1*is.element(rows,combo[,j])
 counter <- counter+1
 }
 }
 #else if (is.odd(b))
-else if((b %% 2)==1)
+else if((a %% 2)==1)
 {
-for(g in 1:((b-1)/2))
+for(g in 1:((a-1)/2))
 {
-ulim <- choose(b,g)
+ulim <- choose(a,g)
 for(j in 1:ulim)
 {
-combo <- combn(b,g)
-rconfig.mtx[,counter] <- 1*is.element(block,combo[,j])
+combo <- combn(a,g)
+rconfig.mtx[,counter] <- 1*is.element(rows,combo[,j])
 counter <- counter+1
 }
 }

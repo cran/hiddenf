@@ -13,7 +13,7 @@ Rows are plants, columns are years 2008-2012.
 \value{matrix of C.jejuni fractions}
 \examples{
 data(cjejuni.mtx)
-cjejuni.out <- hiddenf(cjejuni.mtx)
+cjejuni.out <- HiddenF(cjejuni.mtx)
 plot(cjejuni.out)
 }
 \keyword{datasets}

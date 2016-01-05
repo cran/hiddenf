@@ -1,19 +1,20 @@
-\name{plot.hiddenf}
-\alias{plot.hiddenf}
+\name{plot.HiddenF}
+\alias{plot.HiddenF}
 \alias{plot}
 \title{Interaction plot}
-\description{Interaction plot with blocks colored according to configuration
-that maximizes hidden additivity.}
+\description{Interaction plot with levels of row factor colored according to 
+configuration that maximizes hidden additivity.}
 \usage{
-\method{plot}{hiddenf}(x,y=NULL,main="Hidden Additivity Plot",tfactor="Treatment Factor",
-bfactor="Blocking Factor",colorvec=c("black","red"),legendx=FALSE,center=FALSE,\dots)
+\method{plot}{HiddenF}(x,y=NULL,main="Hidden Additivity Plot",
+rfactor="Rows Factor",cfactor="Columns Factor", colorvec=c("black","red"),
+legendx=FALSE,center=FALSE,\dots)
 }
 \arguments{
-  \item{x}{Object of class 'hiddenf'}
+  \item{x}{Object of class 'HiddenF'}
   \item{y}{Deprecated variable not used in this version of plot}
   \item{main}{Plot Title}
-  \item{tfactor}{Label of variable (treatment factor) on the horizontal axis}
-  \item{bfactor}{Label of trace variable (blocking factor) for optional legend of the interaction plot}
+  \item{rfactor}{Label of trace variable (row factor) for optional legend of the interaction plot}
+  \item{cfactor}{Label of variable (column factor) on the horizontal axis}
   \item{colorvec}{Vector of colors for the two groups in interaction plot}
   \item{legendx}{Graphical parameter that allows for an optional legend, whose
 location is determined by point-and-click interface}
@@ -22,10 +23,10 @@ location is determined by point-and-click interface}
 }
 \author{Jason A. Osborne, Christopher T. Franck and Bongseog Choi
 }
-\seealso{\code{\link{hiddenf}}}
+\seealso{\code{\link{HiddenF}}}
 \examples{
 data(cjejuni.mtx)
-cjejuni.out <- hiddenf(cjejuni.mtx)
+cjejuni.out <- HiddenF(cjejuni.mtx)
 plot(cjejuni.out)
 }
 \keyword{interaction plot}

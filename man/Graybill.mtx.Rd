@@ -14,7 +14,7 @@ Wheat yields from four genotypes in randomized block design with 13 locations.
 \examples{
 \dontrun{
 data(Graybill.mtx)
-Graybill.out <- hiddenf(Graybill.mtx)
+Graybill.out <- HiddenF(Graybill.mtx)
 plot(Graybill.out) 
 }}
 \keyword{datasets}

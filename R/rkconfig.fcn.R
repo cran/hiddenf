@@ -1,54 +1,54 @@
 rkconfig.fcn <-
-function(block)
+function(rows)
 {
-bvalues <- as.vector(names(table(block)))
-b <- length(table(block))
-cc <- 2^(b-1)-1-b
-rkconfig.mtx <- matrix(NA,nrow=length(block),ncol=cc)
+avalues <- as.vector(names(table(rows)))
+a <- length(table(rows))
+cc <- 2^(a-1)-1-a
+rkconfig.mtx <- matrix(NA,nrow=length(rows),ncol=cc)
 counter <- 1
 #if(is.even(b))
-if(1-(b%%2))
+if(1-(a%%2))
 {
-if(b==4)
+if(a==4)
 {
 for(j in 1:3){
-combo <- combn(b,2)
-rkconfig.mtx[,j] <- 1*is.element(block,combo[,j])
+combo <- combn(a,2)
+rkconfig.mtx[,j] <- 1*is.element(rows,combo[,j])
 }
 }
 else
 {
-for(g in 2:((b/2)-1))
+for(g in 2:((a/2)-1))
 {
-ulim <- choose(b,g)
+ulim <- choose(a,g)
 for(j in 1:ulim)
 {
 # print(c(b,g,j,ulim))
-combo <- combn(b,g)
-rkconfig.mtx[,counter] <- 1*is.element(block,combo[,j])
+combo <- combn(a,g)
+rkconfig.mtx[,counter] <- 1*is.element(rows,combo[,j])
 counter <- counter+1
 }
 }
 g <- g+1
-ulim <- choose(b,g)/2
+ulim <- choose(a,g)/2
 for(j in 1:ulim)
 {
-combo <- combn(b,g)[,1:ulim]
-rkconfig.mtx[,counter] <- 1*is.element(block,combo[,j])
+combo <- combn(a,g)[,1:ulim]
+rkconfig.mtx[,counter] <- 1*is.element(rows,combo[,j])
 counter <- counter+1
 }
 }
 }
 #else if (is.odd(b))
-else if (b%%2)
+else if (a%%2)
 {
-for(g in 2:((b-1)/2))
+for(g in 2:((a-1)/2))
 {
-ulim <- choose(b,g)
+ulim <- choose(a,g)
 for(j in 1:ulim)
 {
-combo <- combn(b,g)
-rkconfig.mtx[,counter] <- 1*is.element(block,combo[,j])
+combo <- combn(a,g)
+rkconfig.mtx[,counter] <- 1*is.element(rows,combo[,j])
 counter <- counter+1
 }
 }

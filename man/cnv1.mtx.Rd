@@ -12,7 +12,7 @@ Measured for two types of tissue (columns) on each of six dogs (rows) with lymph
 }}
 \examples{
 data(cnv1.mtx)
-cnv1.out <- hiddenf(cnv1.mtx)
+cnv1.out <- HiddenF(cnv1.mtx)
 summary(cnv1.out)
 }
 \keyword{datasets}

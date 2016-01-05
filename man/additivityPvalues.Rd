@@ -13,7 +13,7 @@ additivityPvalues(ymtx.out)
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{ymtx.out}{
-An object of class \code{hiddenf} created by the \code{hiddenf} function.
+An object of class \code{HiddenF} created by the \code{HiddenF} function.
 }
 }
 \value{
@@ -43,7 +43,7 @@ Jason A. Osborne \email{jaosborn@ncsu.edu}, Christopher T. Franck and Bongseog C
 \examples{
 library(hiddenf)
 data(cjejuni.mtx)
-cjejuni.out <- hiddenf(cjejuni.mtx)
+cjejuni.out <- HiddenF(cjejuni.mtx)
 pvalues <- additivityPvalues(cjejuni.out)
 print(pvalues)
 }

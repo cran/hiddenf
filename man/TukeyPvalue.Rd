@@ -28,7 +28,7 @@ additivityPvalues
 \examples{
 library(hiddenf)
 data(cjejuni.mtx)
-cjejuni.out <- hiddenf(cjejuni.mtx)
+cjejuni.out <- HiddenF(cjejuni.mtx)
 tukey.pvalue <- TukeyPvalue(cjejuni.out)
 }
 \keyword{non-additivity}

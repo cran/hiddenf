@@ -11,7 +11,7 @@ Boik, RJ. (1993) A comparison of three invariant tests of additivity in two-way 
 }
 \examples{
 data(Boik.mtx)
-Boik.out <- hiddenf(Boik.mtx)
+Boik.out <- HiddenF(Boik.mtx)
 anova(Boik.out)
 }
 \keyword{datasets}
